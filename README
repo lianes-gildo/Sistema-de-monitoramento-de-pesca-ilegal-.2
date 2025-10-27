@@ -1,112 +1,103 @@
-Sistema de Detecção de Irregularidades em Embarcações de Pesca
-1. Visão Geral
+Sistema Inteligente de Fiscalização da Pesca
+Descrição Geral
 
-Este sistema tem como objetivo detectar automaticamente embarcações suspeitas de pesca irregular a partir da integração de múltiplas fontes de dados: licenças, atividades de pesca, rastreamento AIS e registros de fiscalizações.
-A análise combina heurísticas comportamentais, métodos de aprendizado de máquina supervisionado (Random Forest) e modelos de detecção de anomalias (Isolation Forest), produzindo um mapa interativo com o status de cada embarcação.
+O sistema tem como objetivo identificar e classificar embarcações de pesca regulares, irregulares e suspeitas com base em dados de rastreamento (AIS), licenciamento e atividades de pesca.
+Ele combina análise heurística, aprendizado de máquina (Random Forest e Isolation Forest) e visualização interativa em mapa.
 
-2. Objetivos do Sistema
+O resultado final é um arquivo consolidado com indicadores de risco e um mapa interativo com a posição e status de cada embarcação.
 
-Identificar embarcações sem licença válida ou com comportamentos suspeitos de infração.
+1. Estrutura do Projeto
+├── dados_pesca/
+│   ├── atividades_pesca.csv
+│   ├── embarcacoes_licencas.csv
+│   ├── rastreamento_ais.csv
+│   ├── fiscalizacoes.csv
+│   └── integracao_features.csv     ← Saída final com todas as features
+│
+├── app.py                          ← Script principal
+├── requirements.txt                ← Dependências do ambiente
+└── README.md                       ← Este arquivo
 
-Reduzir o esforço de fiscalização, priorizando embarcações com maior probabilidade de irregularidade.
+2. Dependências
+2.1. Requisitos de Ambiente
 
-Integrar e analisar dados de diferentes origens de forma automatizada.
+Python 3.9 ou superior
 
-Gerar relatórios e mapas interativos para uso por fiscais ou gestores ambientais.
+Sistema operacional: Linux, Windows ou macOS
 
-3. Estrutura de Dados (datasets)
+Memória mínima recomendada: 4 GB
 
-Os arquivos de entrada seguem o formato CSV, organizados na pasta dados_pesca/.
+2.2. Instalação das Bibliotecas
 
-Arquivo	Descrição	Campos principais
-embarcacoes_licencas.csv	Dados de registro e licença das embarcações	id_embarcacao, nome_embarcacao, tipo_embarcacao, licenca_valida
-atividades_pesca.csv	Registros de atividades (data, hora, coordenadas)	id_embarcacao, data_atividade, hora_atividade, coordenada_lat, coordenada_lon
-rastreamento_ais.csv	Dados AIS de rastreamento marítimo	mmsi, timestamp, lat, lon, velocidade_nos
-fiscalizacoes.csv	Resultados de fiscalizações oficiais	id_embarcacao, data_fiscalizacao, resultado
-4. Estrutura de Código
+Crie um ambiente virtual (opcional, mas recomendado):
 
-O script principal (app.py) possui cerca de 130 linhas e é dividido em blocos funcionais compactos:
-
-Etapa	Descrição
-Leitura dos dados	Importa e padroniza os CSVs de entrada
-Cálculo de features AIS	Extrai indicadores de movimento e padrão de navegação
-Integração de datasets	Combina dados de licenças, atividades e rastreamento
-Heurística de suspeição	Atribui pontuação de suspeita com base em múltiplos critérios
-Treinamento de modelo	Usa Random Forest para prever risco de infração
-Detecção de anomalias	Aplica Isolation Forest para reforçar a análise comportamental
-Geração de mapa	Cria um mapa interativo em HTML com cores representando o status das embarcações
-Relatórios	Salva as análises em integracao_features.csv e gera mapa_barcos.html
-5. Execução do Sistema
-Pré-requisitos
-
-Python 3.10 ou superior
-
-Bibliotecas: pandas, numpy, folium, scikit-learn
-
-Execução
-
-Coloque os arquivos .csv dentro da pasta dados_pesca/.
-
-No terminal, execute:
-
-python app.py
+python3 -m venv venv
+source venv/bin/activate        # Linux / Mac
+venv\Scripts\activate           # Windows
 
 
-O sistema realizará automaticamente:
+Instale as dependências necessárias:
 
-Leitura e integração dos dados
+pip install -r requirements.txt
 
-Análise heurística e predição supervisionada
+2.3. Conteúdo do requirements.txt
+pandas
+numpy
+scikit-learn
+folium
+matplotlib
 
-Geração de relatório consolidado integracao_features.csv
 
-Criação do mapa interativo mapa_barcos.html
+Caso esteja usando Jupyter Notebook, inclua também:
 
-Saídas
+jupyter
 
-CSV: com colunas de scores, classificações e resultados de previsão.
+3. Execução do Sistema
+3.1. Arquivos de Entrada
 
-Mapa HTML: com pontos coloridos representando o status:
+Antes de rodar o sistema, verifique se os seguintes CSVs estão presentes na pasta dados_pesca/:
 
-Vermelho: Irregular + Suspeito
+Arquivo	Descrição
+embarcacoes_licencas.csv	Registro de embarcações e situação da licença
+atividades_pesca.csv	Atividades de pesca (data, local, espécie, infrações)
+rastreamento_ais.csv	Dados de posição e velocidade da embarcação
+fiscalizacoes.csv	Registros de fiscalizações realizadas e resultados
 
-Laranja: Suspeito Comportamental
+Cada arquivo deve conter pelo menos 50–100 registros para permitir aprendizado consistente.
 
-Cinza: Irregular Documental
+3.2. Execução
 
-Azul: Regular
+No terminal, execute o comando abaixo na raiz do projeto:
 
-6. Metodologia de Análise
+python3 app.py
 
-A análise combina três camadas de verificação:
 
-Heurística Documental: embarcações sem licença ou com lacunas administrativas.
+O sistema realizará automaticamente as seguintes etapas:
 
-Heurística Comportamental: padrões suspeitos (alta proporção de loiter, distâncias incomuns, horários noturnos).
+Leitura e integração dos datasets
 
-Aprendizado Supervisionado: o modelo Random Forest aprende com fiscalizações anteriores para prever infrações futuras.
+Cálculo de métricas AIS (velocidade média, distância total, tempo parado, etc.)
 
-Anomalias: o modelo Isolation Forest detecta trajetórias fora dos padrões esperados.
+Marcação heurística de suspeitos
 
-7. Interpretação dos Resultados
+Treinamento de modelos (RandomForest e IsolationForest)
 
-Score heurístico: pontuação calculada com base em fatores de risco.
+Validação com dados de fiscalização
 
-Score de anomalia: valor calculado pelo modelo de isolamento (quanto maior, mais atípico).
+Geração do arquivo final e mapa interativo
 
-Categoria final: combina licenciamento e comportamento, resultando nas classes apresentadas no mapa.
+4. Estrutura de Saída
 
-8. Aplicações Práticas
+Após a execução, serão gerados:
 
-Apoio à decisão em operações de fiscalização marítima.
+Arquivo / Saída	  Descrição
+integracao_features.csv	Base consolidada com todas as features e previsões
+mapa_barcos.html	Mapa interativo com os status de cada embarcação
+Saída de console	Relatórios de acurácia, validação cruzada e métricas
 
-Identificação de áreas de risco para pesca ilegal.
-
-Monitoramento contínuo de frota pesqueira.
-
-Integração com sistemas de monitoramento por satélite.
-
-9. Conclusão
-
-O sistema representa uma ferramenta de análise inteligente para gestão pesqueira e ambiental, aliando dados administrativos e comportamentais a técnicas modernas de aprendizado de máquina.
-Seu design modular permite expansão futura, integrando dados meteorológicos, limites de áreas de pesca e novos modelos preditivos.
+4.1. Legenda do Mapa
+Cor	Significado
+🔴 Vermelho	Infrator confirmado (irregular + suspeito)
+🟠 Laranja	Suspeito comportamental
+⚫ Cinza	Irregular documental
+🔵 Azul	Regular (sem irregularidades)
