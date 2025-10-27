@@ -1,5 +1,4 @@
-Sistema Inteligente de Fiscalização da Pesca
-Descrição Geral
+Sistema Inteligente de Fiscalização de Pesca
 
 O sistema tem como objetivo identificar e classificar embarcações de pesca regulares, irregulares e suspeitas com base em dados de rastreamento (AIS), licenciamento e atividades de pesca.
 Ele combina análise heurística, aprendizado de máquina (Random Forest e Isolation Forest) e visualização interativa em mapa.
