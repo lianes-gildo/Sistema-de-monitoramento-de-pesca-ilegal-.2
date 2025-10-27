@@ -1,0 +1,51 @@
+id_registo,data_atividade,hora_atividade,id_embarcacao,provincia,zona_marinha,arte_utilizada,especie_capturada,quantidade_kg,coordenada_lat,coordenada_lon,distancia_costa_km,profundidade_m,sinal_ais_detectado,ocorrencia_infracao,tipo_infracao,descricao_infracao
+201,2025-05-06,07:15,E001,Sofala,Zona C,rede_cerco,Carapau,384,-18.850066,35.957235,9.3,21,Sim,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+202,2025-05-10,18:00,E002,Sofala,Zona B,rede_cerco,Sardinha,68,-18.864683,35.955317,15.2,28,Não,Não,,
+203,2025-05-07,09:15,E003,Sofala,Zona C,linha_mao,Camarão,57,-18.869389,35.970851,7.1,13,Não,Não,,
+204,2025-05-08,06:15,E004,Sofala,Zona A,rede_cerco,Atum,352,-18.855161,35.921734,0.4,5,Sim,Sim,Sem AIS ativo,AIS desligado durante operação
+205,2025-05-13,13:45,E005,Sofala,Zona C,rede_cerco,Sardinha,54,-18.880257,35.966285,6.2,9,Sim,Sim,Sem AIS ativo,AIS desligado durante operação
+206,2025-05-13,18:45,E006,Sofala,Zona C,linha_mao,Carapau,32,-18.830687,35.955484,8.1,9,Sim,Não,,
+207,2025-05-04,10:30,E007,Maputo,Zona B,linha_mao,Sardinha,66,-25.980888,32.588218,9.7,26,Sim,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+208,2025-05-07,11:45,E008,Maputo,Zona B,linha_mao,Sardinha,70,-25.982013,32.580166,10.8,32,Não,Sim,Pesca fora da zona licenciada,Operava em zona não autorizada (Zona B)
+209,2025-05-14,18:45,E009,Sofala,Zona B,linha_mao,Carapau,49,-18.86027,35.938846,13.6,20,Não,Não,,
+210,2025-05-09,17:15,E010,Maputo,Zona B,linha_mao,Carapau,73,-25.965823,32.546807,9.3,25,Sim,Sim,Sem AIS ativo,AIS desligado durante operação
+211,2025-05-11,16:45,E011,Sofala,Zona C,rede_cerco,Sardinha,428,-18.845231,35.963427,7.8,13,Não,Não,,
+212,2025-05-15,12:00,E012,Maputo,Zona A,rede_cerco,Sardinha,17,-25.99957,32.571603,2.1,12,Não,Sim,Sem AIS ativo,AIS desligado durante operação
+213,2025-05-07,11:15,E013,Sofala,Zona B,rede_cerco,Carapau,336,-18.853128,35.924739,12.6,23,Sim,Não,,
+214,2025-05-07,10:00,E014,Sofala,Zona B,rede_cerco,Camarão,450,-18.873538,35.972234,14.1,28,Não,Sim,Sem AIS ativo,AIS desligado durante operação
+215,2025-05-04,16:00,E015,Maputo,Zona C,linha_mao,Camarão,67,-25.986784,32.579816,8.7,18,Sim,Sim,Pesca em período proibido,Pescava no período de defeso
+216,2025-05-11,07:15,E016,Sofala,Zona B,rede_cerco,Carapau,50,-18.869583,35.956287,9.8,20,Sim,Não,,
+217,2025-05-12,17:00,E017,Sofala,Zona A,rede_cerco,Camarão,14,-18.843749,35.987125,2.9,12,Sim,Não,,
+218,2025-05-07,12:15,E018,Maputo,Zona A,rede_cerco,Sardinha,336,-25.962767,32.573098,3.7,14,Sim,Não,,
+219,2025-05-14,16:00,E019,Sofala,Zona C,linha_mao,Carapau,26,-18.860717,35.991293,2.8,18,Sim,Não,,
+220,2025-05-01,12:45,E020,Sofala,Zona A,rede_cerco,Carapau,48,-18.858259,35.95402,3.2,0,Sim,Não,,
+221,2025-05-12,08:45,E021,Maputo,Zona A,rede_cerco,Carapau,312,-25.974393,32.593142,6.0,5,Não,Sim,Sem AIS ativo,AIS desligado durante operação
+222,2025-05-06,09:00,E022,Inhambane,Zona B,rede_cerco,Sardinha,25,-23.33617,35.469965,13.8,26,Não,Não,,
+223,2025-05-11,12:30,E023,Maputo,Zona A,rede_cerco,Atum,395,-25.980595,32.596265,3.2,11,Sim,Não,,
+224,2025-05-06,10:30,E024,Sofala,Zona C,linha_mao,Sardinha,44,-18.874041,35.953447,7.2,9,Sim,Não,,
+225,2025-05-08,14:15,E025,Sofala,Zona C,rede_cerco,Atum,51,-18.854078,35.965221,8.0,14,Sim,Sim,Pesca em período proibido,Pescava no período de defeso
+226,2025-05-11,15:30,E026,Maputo,Zona B,rede_cerco,Carapau,382,-25.998307,32.577587,11.3,21,Sim,Não,,
+227,2025-05-06,11:45,E027,Maputo,Zona B,rede_cerco,Carapau,379,-25.973226,32.594081,15.8,25,Sim,Sim,Pesca em período proibido,Pesca noturna
+228,2025-05-04,17:45,E028,Maputo,Zona B,rede_cerco,Carapau,400,-25.964849,32.584511,8.2,24,Não,Não,,
+229,2025-05-05,09:30,E029,Maputo,Zona A,rede_cerco,Camarão,52,-25.968795,32.635265,2.6,9,Sim,Sim,Sem AIS ativo,AIS desligado durante operação
+230,2025-05-12,08:45,E030,Sofala,Zona A,linha_mao,Carapau,44,-18.860694,35.936626,5.3,11,Sim,Sim,Pesca em período proibido,Pesca noturna
+231,2025-05-05,13:00,E031,Inhambane,Zona A,rede_cerco,Atum,80,-23.304179,35.461812,5.8,2,Sim,Sim,Sem AIS ativo,AIS desligado durante operação
+232,2025-05-02,09:00,E032,Inhambane,Zona C,rede_cerco,Sardinha,67,-23.308263,35.523809,6.0,12,Não,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+233,2025-05-05,15:45,E033,Sofala,Zona B,rede_cerco,Camarão,329,-18.858007,35.94993,8.9,25,Não,Sim,Pesca em período proibido,Pescava no período de defeso
+234,2025-05-11,07:15,E034,Inhambane,Zona A,rede_cerco,Sardinha,338,-23.341246,35.489472,1.2,14,Sim,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+235,2025-05-08,17:45,E035,Sofala,Zona B,rede_cerco,Camarão,387,-18.875665,35.953559,13.6,20,Não,Não,,
+236,2025-05-11,09:30,E036,Maputo,Zona C,linha_mao,Atum,86,-25.965451,32.612143,4.8,15,Sim,Sim,Pesca em período proibido,Pescava no período de defeso
+237,2025-05-14,08:00,E037,Maputo,Zona A,linha_mao,Carapau,24,-25.964802,32.601636,0.5,2,Não,Não,,
+238,2025-05-08,17:30,E038,Inhambane,Zona C,rede_cerco,Carapau,34,-23.309561,35.48594,8.5,16,Sim,Não,,
+239,2025-05-02,15:00,E039,Maputo,Zona B,rede_cerco,Carapau,372,-25.9836,32.590645,12.6,22,Sim,Não,,
+240,2025-05-14,15:00,E040,Inhambane,Zona C,rede_cerco,Carapau,374,-23.282685,35.489477,5.6,17,Sim,Não,,
+241,2025-05-03,13:45,E041,Inhambane,Zona B,rede_cerco,Sardinha,422,-23.339494,35.495742,14.3,21,Não,Não,,
+242,2025-05-08,11:45,E042,Maputo,Zona B,rede_cerco,Carapau,379,-25.950732,32.594256,13.6,32,Sim,Não,,
+243,2025-05-06,12:45,E043,Maputo,Zona B,rede_cerco,Camarão,38,-25.974908,32.570925,10.2,21,Sim,Não,,
+244,2025-05-07,14:00,E044,Maputo,Zona C,rede_cerco,Atum,59,-25.971542,32.592823,8.6,18,Sim,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+245,2025-05-11,13:00,E045,Maputo,Zona A,rede_cerco,Carapau,292,-25.96974,32.615071,2.5,18,Sim,Não,,
+246,2025-05-02,06:15,E046,Maputo,Zona C,rede_cerco,Sardinha,352,-25.957487,32.568857,5.9,16,Sim,Sim,Uso de arte proibida,Utilização de arte não permitida na região
+247,2025-05-02,09:00,E047,Sofala,Zona B,rede_cerco,Camarão,366,-18.864469,35.97428,12.9,24,Não,Sim,Sem AIS ativo,AIS desligado durante operação
+248,2025-05-07,13:45,E048,Maputo,Zona A,rede_cerco,Sardinha,45,-25.986936,32.555703,2.1,11,Sim,Não,,
+249,2025-05-09,17:15,E049,Inhambane,Zona A,rede_cerco,Carapau,391,-23.315718,35.455085,3.3,9,Sim,Não,,
+250,2025-05-05,06:30,E050,Maputo,Zona C,rede_cerco,Carapau,302,-25.987677,32.589075,8.1,10,Não,Não,,

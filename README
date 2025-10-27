@@ -1,0 +1,112 @@
+Sistema de Detecção de Irregularidades em Embarcações de Pesca
+1. Visão Geral
+
+Este sistema tem como objetivo detectar automaticamente embarcações suspeitas de pesca irregular a partir da integração de múltiplas fontes de dados: licenças, atividades de pesca, rastreamento AIS e registros de fiscalizações.
+A análise combina heurísticas comportamentais, métodos de aprendizado de máquina supervisionado (Random Forest) e modelos de detecção de anomalias (Isolation Forest), produzindo um mapa interativo com o status de cada embarcação.
+
+2. Objetivos do Sistema
+
+Identificar embarcações sem licença válida ou com comportamentos suspeitos de infração.
+
+Reduzir o esforço de fiscalização, priorizando embarcações com maior probabilidade de irregularidade.
+
+Integrar e analisar dados de diferentes origens de forma automatizada.
+
+Gerar relatórios e mapas interativos para uso por fiscais ou gestores ambientais.
+
+3. Estrutura de Dados (datasets)
+
+Os arquivos de entrada seguem o formato CSV, organizados na pasta dados_pesca/.
+
+Arquivo	Descrição	Campos principais
+embarcacoes_licencas.csv	Dados de registro e licença das embarcações	id_embarcacao, nome_embarcacao, tipo_embarcacao, licenca_valida
+atividades_pesca.csv	Registros de atividades (data, hora, coordenadas)	id_embarcacao, data_atividade, hora_atividade, coordenada_lat, coordenada_lon
+rastreamento_ais.csv	Dados AIS de rastreamento marítimo	mmsi, timestamp, lat, lon, velocidade_nos
+fiscalizacoes.csv	Resultados de fiscalizações oficiais	id_embarcacao, data_fiscalizacao, resultado
+4. Estrutura de Código
+
+O script principal (app.py) possui cerca de 130 linhas e é dividido em blocos funcionais compactos:
+
+Etapa	Descrição
+Leitura dos dados	Importa e padroniza os CSVs de entrada
+Cálculo de features AIS	Extrai indicadores de movimento e padrão de navegação
+Integração de datasets	Combina dados de licenças, atividades e rastreamento
+Heurística de suspeição	Atribui pontuação de suspeita com base em múltiplos critérios
+Treinamento de modelo	Usa Random Forest para prever risco de infração
+Detecção de anomalias	Aplica Isolation Forest para reforçar a análise comportamental
+Geração de mapa	Cria um mapa interativo em HTML com cores representando o status das embarcações
+Relatórios	Salva as análises em integracao_features.csv e gera mapa_barcos.html
+5. Execução do Sistema
+Pré-requisitos
+
+Python 3.10 ou superior
+
+Bibliotecas: pandas, numpy, folium, scikit-learn
+
+Execução
+
+Coloque os arquivos .csv dentro da pasta dados_pesca/.
+
+No terminal, execute:
+
+python app.py
+
+
+O sistema realizará automaticamente:
+
+Leitura e integração dos dados
+
+Análise heurística e predição supervisionada
+
+Geração de relatório consolidado integracao_features.csv
+
+Criação do mapa interativo mapa_barcos.html
+
+Saídas
+
+CSV: com colunas de scores, classificações e resultados de previsão.
+
+Mapa HTML: com pontos coloridos representando o status:
+
+Vermelho: Irregular + Suspeito
+
+Laranja: Suspeito Comportamental
+
+Cinza: Irregular Documental
+
+Azul: Regular
+
+6. Metodologia de Análise
+
+A análise combina três camadas de verificação:
+
+Heurística Documental: embarcações sem licença ou com lacunas administrativas.
+
+Heurística Comportamental: padrões suspeitos (alta proporção de loiter, distâncias incomuns, horários noturnos).
+
+Aprendizado Supervisionado: o modelo Random Forest aprende com fiscalizações anteriores para prever infrações futuras.
+
+Anomalias: o modelo Isolation Forest detecta trajetórias fora dos padrões esperados.
+
+7. Interpretação dos Resultados
+
+Score heurístico: pontuação calculada com base em fatores de risco.
+
+Score de anomalia: valor calculado pelo modelo de isolamento (quanto maior, mais atípico).
+
+Categoria final: combina licenciamento e comportamento, resultando nas classes apresentadas no mapa.
+
+8. Aplicações Práticas
+
+Apoio à decisão em operações de fiscalização marítima.
+
+Identificação de áreas de risco para pesca ilegal.
+
+Monitoramento contínuo de frota pesqueira.
+
+Integração com sistemas de monitoramento por satélite.
+
+9. Conclusão
+
+O sistema representa uma ferramenta de análise inteligente para gestão pesqueira e ambiental, aliando dados administrativos e comportamentais a técnicas modernas de aprendizado de máquina.
+Seu design modular permite expansão futura, integrando dados meteorológicos, limites de áreas de pesca e novos modelos preditivos.

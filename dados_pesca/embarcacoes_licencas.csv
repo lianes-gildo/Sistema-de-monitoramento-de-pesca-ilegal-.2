@@ -1,0 +1,51 @@
+id_embarcacao,nome_embarcacao,numero_registo,tipo_embarcacao,comprimento_m,arqueacao_bruta,propulsao,licenca_valida,licenca_numero,armador,provincia_porto,porto_base,ano_registo
+E001,Marfim 1,MOZ-1000,semi-industrial,15.3,36.0,motor,Sim,LIC2025/001,Frota Azul,Sofala,Beira,2025
+E002,Marfim 2,MOZ-1001,artesanal,6.4,1.1,remo,Sim,LIC2025/002,Pescador António,Sofala,Beira,2023
+E003,Barco E003,MOZ-1002,artesanal,6.5,2.1,remo,Não,,Pescador João,Sofala,Beira,2024
+E004,Barco E004,MOZ-1003,semi-industrial,18.4,32.0,motor,Não,,Pescador João,Sofala,Beira,2025
+E005,Mapilane 5,MOZ-1004,artesanal,6.6,1.5,motor,Não,,Pescador Carlos,Sofala,Beira,2024
+E006,Estrela do Mar 6,MOZ-1005,artesanal,5.5,2.2,remo,Sim,LIC2025/006,Pescador José,Sofala,Beira,2024
+E007,Barco E007,MOZ-1006,artesanal,6.1,3.7,remo,Sim,LIC2025/007,Pescador António,Maputo,Maputo,2025
+E008,Estrela do Mar 8,MOZ-1007,artesanal,5.7,4.7,remo,Não,,Frota Lda,Maputo,Maputo,2023
+E009,Coralina 9,MOZ-1008,artesanal,4.8,4.7,motor,Não,,Pescador José,Sofala,Beira,2025
+E010,Mar Azul 10,MOZ-1009,artesanal,7.9,3.2,motor,Não,,Pescador João,Maputo,Maputo,2023
+E011,Mapilane 11,MOZ-1010,semi-industrial,15.9,31.0,motor,Sim,LIC2025/011,Frota Coral,Sofala,Beira,2025
+E012,Coralina 12,MOZ-1011,artesanal,7.2,2.9,motor,Sim,LIC2025/012,Frota Azul,Maputo,Maputo,2025
+E013,Coralina 13,MOZ-1012,semi-industrial,18.4,36.0,motor,Não,,Frota Lda,Sofala,Beira,2025
+E014,Barco E014,MOZ-1013,semi-industrial,22.6,40.0,motor,Não,,Pescador António,Sofala,Beira,2025
+E015,Barco E015,MOZ-1014,artesanal,5.2,4.8,remo,Não,,Pescador Pedro,Maputo,Maputo,2023
+E016,Barco E016,MOZ-1015,artesanal,8.9,4.2,remo,Sim,LIC2025/016,Pescador Carlos,Sofala,Beira,2023
+E017,Barco E017,MOZ-1016,artesanal,4.8,4.0,remo,Não,,Pescador António,Sofala,Beira,2023
+E018,Estrela do Mar 18,MOZ-1017,semi-industrial,19.2,34.0,motor,Sim,LIC2025/018,Frota Marfim,Maputo,Maputo,2024
+E019,Brisa 19,MOZ-1018,artesanal,6.8,1.5,remo,Não,,Frota Lda,Sofala,Beira,2025
+E020,Coralina 20,MOZ-1019,artesanal,4.8,3.5,remo,Sim,LIC2025/020,Pescador João,Sofala,Beira,2023
+E021,Ondas do Sul 21,MOZ-1020,semi-industrial,17.1,33.0,motor,Não,,Frota Ventania,Maputo,Maputo,2024
+E022,Estrela do Mar 22,MOZ-1021,artesanal,7.5,2.4,motor,Sim,LIC2025/022,Frota Azul,Inhambane,Maxixe,2023
+E023,Barco E023,MOZ-1022,semi-industrial,16.1,34.0,motor,Não,,Frota Coral,Maputo,Maputo,2024
+E024,Barco E024,MOZ-1023,artesanal,8.4,1.3,remo,Sim,LIC2025/024,Frota Azul,Sofala,Beira,2023
+E025,Barco E025,MOZ-1024,artesanal,5.5,2.6,remo,Não,,Frota Lda,Sofala,Beira,2024
+E026,Barco E026,MOZ-1025,semi-industrial,19.6,38.0,motor,Não,,Frota Coral,Maputo,Maputo,2023
+E027,Marfim 27,MOZ-1026,semi-industrial,20.8,41.0,motor,Não,,Frota Lda,Maputo,Maputo,2023
+E028,Ondas do Sul 28,MOZ-1027,semi-industrial,20.3,31.0,motor,Sim,LIC2025/028,Frota Coral,Maputo,Maputo,2023
+E029,Marfim 29,MOZ-1028,artesanal,8.7,3.3,remo,Sim,LIC2025/029,Pescador José,Maputo,Maputo,2025
+E030,Coralina 30,MOZ-1029,artesanal,5.7,3.7,motor,Não,,Pescador José,Sofala,Beira,2023
+E031,Barco E031,MOZ-1030,artesanal,8.7,4.7,remo,Sim,LIC2025/031,Frota Azul,Inhambane,Maxixe,2025
+E032,Coralina 32,MOZ-1031,artesanal,8.7,4.5,remo,Não,,Frota Coral,Inhambane,Maxixe,2024
+E033,Barco E033,MOZ-1032,semi-industrial,24.9,43.0,motor,Não,,Frota Azul,Sofala,Beira,2023
+E034,Coralina 34,MOZ-1033,semi-industrial,22.4,33.0,motor,Sim,LIC2025/034,Pescador João,Inhambane,Maxixe,2023
+E035,Barco E035,MOZ-1034,semi-industrial,17.5,48.0,motor,Sim,LIC2025/035,Pescador José,Sofala,Beira,2024
+E036,Nhamussoro 36,MOZ-1035,artesanal,5.1,4.9,remo,Não,,Pescador António,Maputo,Maputo,2025
+E037,Ventania 37,MOZ-1036,artesanal,8.8,3.8,remo,Sim,LIC2025/037,Pescador João,Maputo,Maputo,2025
+E038,Barco E038,MOZ-1037,artesanal,5.9,4.6,remo,Sim,LIC2025/038,Frota Ventania,Inhambane,Maxixe,2025
+E039,Mar Azul 39,MOZ-1038,semi-industrial,23.8,38.0,motor,Sim,LIC2025/039,Frota Ventania,Maputo,Maputo,2023
+E040,Barco E040,MOZ-1039,semi-industrial,15.2,45.0,motor,Não,,Frota Ventania,Inhambane,Maxixe,2024
+E041,Barco E041,MOZ-1040,semi-industrial,18.8,31.0,motor,Sim,LIC2025/041,Frota Ventania,Inhambane,Maxixe,2024
+E042,Barco E042,MOZ-1041,semi-industrial,23.7,34.0,motor,Sim,LIC2025/042,Pescador José,Maputo,Maputo,2024
+E043,Coralina 43,MOZ-1042,artesanal,8.0,2.4,motor,Não,,Frota Lda,Maputo,Maputo,2023
+E044,Ventania 44,MOZ-1043,artesanal,8.8,2.1,remo,Não,,Pescador João,Maputo,Maputo,2025
+E045,Nhamussoro 45,MOZ-1044,semi-industrial,20.1,38.0,motor,Sim,LIC2025/045,Frota Marfim,Maputo,Maputo,2023
+E046,Barco E046,MOZ-1045,semi-industrial,23.1,44.0,motor,Sim,LIC2025/046,Pescador João,Maputo,Maputo,2024
+E047,Estrela do Mar 47,MOZ-1046,semi-industrial,18.3,36.0,motor,Não,,Pescador António,Sofala,Beira,2024
+E048,Ventania 48,MOZ-1047,artesanal,5.8,1.5,motor,Não,,Frota Coral,Maputo,Maputo,2025
+E049,Ondas do Sul 49,MOZ-1048,semi-industrial,15.0,36.0,motor,Não,,Pescador Pedro,Inhambane,Maxixe,2024
+E050,Brisa 50,MOZ-1049,semi-industrial,22.9,49.0,motor,Sim,LIC2025/050,Frota Azul,Maputo,Maputo,2024

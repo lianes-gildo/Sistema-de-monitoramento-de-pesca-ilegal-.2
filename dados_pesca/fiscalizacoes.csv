@@ -1,0 +1,51 @@
+id_fiscalizacao,data_fiscalizacao,provincia,localizacao,autoridade_responsavel,id_embarcacao,resultado,descricao_infracao,acao_tomada,multa_mzn
+9001,2025-05-06,Sofala,Zona Costeira,INIP,E001,Regular,Sem irregularidades,Sem ação,0
+9002,2025-05-10,Sofala,Alto Mar,INIP,E002,Regular,Sem irregularidades,Sem ação,0
+9003,2025-05-07,Sofala,Zona Costeira,INIP,E003,Regular,Sem irregularidades,Sem ação,0
+9004,2025-05-08,Sofala,Alto Mar,MIMAIP,E004,Regular,Sem irregularidades,Sem ação,0
+9005,2025-05-13,Sofala,Beira,INIP,E005,Infracao,AIS desligado durante operação,Advertência,8960
+9006,2025-05-13,Sofala,Zona Costeira,INIP,E006,Regular,Sem irregularidades,Sem ação,0
+9007,2025-05-04,Maputo,Alto Mar,INIP,E007,Regular,Sem irregularidades,Sem ação,0
+9008,2025-05-07,Maputo,Zona Costeira,MIMAIP,E008,Infracao,Operava em zona não autorizada (Zona B),Multa,10777
+9009,2025-05-14,Sofala,Zona Costeira,INIP,E009,Infracao,,Advertência,10193
+9010,2025-05-09,Maputo,Alto Mar,MIMAIP,E010,Infracao,AIS desligado durante operação,Advertência,27160
+9011,2025-05-11,Sofala,Beira,MIMAIP,E011,Regular,Sem irregularidades,Sem ação,0
+9012,2025-05-15,Maputo,Alto Mar,INIP,E012,Infracao,AIS desligado durante operação,Advertência,22296
+9013,2025-05-07,Sofala,Alto Mar,INIP,E013,Infracao,,Apreensão da carga,23811
+9014,2025-05-07,Sofala,Alto Mar,MIMAIP,E014,Infracao,AIS desligado durante operação,Multa,21885
+9015,2025-05-04,Maputo,Alto Mar,MIMAIP,E015,Infracao,Pescava no período de defeso,Advertência,29523
+9016,2025-05-11,Sofala,Zona Costeira,MIMAIP,E016,Regular,Sem irregularidades,Sem ação,0
+9017,2025-05-12,Sofala,Zona Costeira,INIP,E017,Infracao,,Multa,15136
+9018,2025-05-07,Maputo,Beira,INIP,E018,Regular,Sem irregularidades,Sem ação,0
+9019,2025-05-14,Sofala,Alto Mar,MIMAIP,E019,Regular,Sem irregularidades,Sem ação,0
+9020,2025-05-01,Sofala,Alto Mar,MIMAIP,E020,Regular,Sem irregularidades,Sem ação,0
+9021,2025-05-12,Maputo,Beira,INIP,E021,Infracao,AIS desligado durante operação,Multa,18948
+9022,2025-05-06,Inhambane,Zona Costeira,MIMAIP,E022,Regular,Sem irregularidades,Sem ação,0
+9023,2025-05-11,Maputo,Zona Costeira,INIP,E023,Regular,Sem irregularidades,Sem ação,0
+9024,2025-05-06,Sofala,Zona Costeira,MIMAIP,E024,Infracao,,Advertência,27826
+9025,2025-05-08,Sofala,Zona Costeira,MIMAIP,E025,Infracao,Pescava no período de defeso,Advertência,29728
+9026,2025-05-11,Maputo,Alto Mar,INIP,E026,Regular,Sem irregularidades,Sem ação,0
+9027,2025-05-06,Maputo,Alto Mar,INIP,E027,Infracao,Pesca noturna,Advertência,26773
+9028,2025-05-04,Maputo,Beira,MIMAIP,E028,Regular,Sem irregularidades,Sem ação,0
+9029,2025-05-05,Maputo,Alto Mar,INIP,E029,Regular,Sem irregularidades,Sem ação,0
+9030,2025-05-12,Sofala,Alto Mar,MIMAIP,E030,Regular,Sem irregularidades,Sem ação,0
+9031,2025-05-05,Inhambane,Zona Costeira,INIP,E031,Infracao,AIS desligado durante operação,Apreensão da carga,27031
+9032,2025-05-02,Inhambane,Zona Costeira,MIMAIP,E032,Regular,Sem irregularidades,Sem ação,0
+9033,2025-05-05,Sofala,Zona Costeira,INIP,E033,Regular,Sem irregularidades,Sem ação,0
+9034,2025-05-11,Inhambane,Alto Mar,MIMAIP,E034,Infracao,Utilização de arte não permitida na região,Advertência,12818
+9035,2025-05-08,Sofala,Beira,INIP,E035,Regular,Sem irregularidades,Sem ação,0
+9036,2025-05-11,Maputo,Zona Costeira,MIMAIP,E036,Infracao,Pescava no período de defeso,Apreensão da carga,22219
+9037,2025-05-14,Maputo,Alto Mar,INIP,E037,Regular,Sem irregularidades,Sem ação,0
+9038,2025-05-08,Inhambane,Alto Mar,MIMAIP,E038,Regular,Sem irregularidades,Sem ação,0
+9039,2025-05-02,Maputo,Alto Mar,INIP,E039,Regular,Sem irregularidades,Sem ação,0
+9040,2025-05-14,Inhambane,Beira,MIMAIP,E040,Regular,Sem irregularidades,Sem ação,0
+9041,2025-05-03,Inhambane,Zona Costeira,INIP,E041,Regular,Sem irregularidades,Sem ação,0
+9042,2025-05-08,Maputo,Alto Mar,MIMAIP,E042,Regular,Sem irregularidades,Sem ação,0
+9043,2025-05-06,Maputo,Alto Mar,INIP,E043,Regular,Sem irregularidades,Sem ação,0
+9044,2025-05-07,Maputo,Alto Mar,MIMAIP,E044,Infracao,Utilização de arte não permitida na região,Multa,11096
+9045,2025-05-11,Maputo,Beira,INIP,E045,Infracao,,Apreensão da carga,16047
+9046,2025-05-02,Maputo,Alto Mar,MIMAIP,E046,Infracao,Utilização de arte não permitida na região,Multa,18005
+9047,2025-05-02,Sofala,Zona Costeira,INIP,E047,Infracao,AIS desligado durante operação,Apreensão da carga,28686
+9048,2025-05-07,Maputo,Beira,MIMAIP,E048,Regular,Sem irregularidades,Sem ação,0
+9049,2025-05-09,Inhambane,Zona Costeira,INIP,E049,Infracao,,Multa,22248
+9050,2025-05-05,Maputo,Zona Costeira,INIP,E050,Infracao,,Advertência,22283
